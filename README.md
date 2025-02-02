@@ -1,0 +1,3 @@
+This repository demonstrates a common misunderstanding regarding the behavior of the `map()` function in Kotlin when applied to lists.  The `map()` function in Kotlin is designed to be immutable; it always returns a *new* list containing the transformed elements, leaving the original list unchanged. This differs from some other programming languages where a similar function might modify the list in place.
+
+The `bug.kt` file showcases this behavior, highlighting the difference between using `map()` with an immutable `List` and a mutable `MutableList`. The `bugSolution.kt` demonstrates how to achieve the in-place modification if needed using `mapIndexedTo()` and other methods.
